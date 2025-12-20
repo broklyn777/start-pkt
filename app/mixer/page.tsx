@@ -32,8 +32,8 @@ export default function MixerPage() {
 
       {/* Navigation */}
       <div className="flex items-center justify-between">
-        <Link href="/playlist" className="text-indigo-400 hover:underline">
-          ← Föregående: Playlist
+        <Link href="/pianoroll" className="text-indigo-400 hover:underline">
+          ← Föregående: Piano roll
         </Link>
         <Link href="/" className="text-indigo-400 hover:underline">
           Hem →

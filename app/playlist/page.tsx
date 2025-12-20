@@ -37,8 +37,8 @@ export default function PlaylistPage() {
         <Link href="/channelrack" className="text-indigo-400 hover:underline">
           ← Föregående: Channel Rack
         </Link>
-        <Link href="/mixer" className="text-indigo-400 hover:underline">
-          Nästa: Mixer →
+        <Link href="/pianoroll" className="text-indigo-400 hover:underline">
+          Nästa: Piano roll →
         </Link>
       </div>
     </PageShell>

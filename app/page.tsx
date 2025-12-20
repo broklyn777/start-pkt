@@ -32,10 +32,17 @@ export default function Home() {
               </p>
             </section>
           </Link>
-
+          <Link href="/pianoroll" className="block">
+            <section className="bg-gray-700 rounded-xl p-6 border border-gray-600 transition hover:bg-gray-600">
+              <h2 className="text-xl font-semibold mb-2">3. Piano Roll</h2>
+              <p className="text-gray-300">
+                Här ritar du noter och bygger melodier, ackord och basgångar.
+              </p>
+            </section>
+          </Link>
           <Link href="/mixer" className="block">
             <section className="bg-gray-700 rounded-xl p-6 border border-gray-600 transition hover:bg-gray-600">
-              <h2 className="text-xl font-semibold mb-2">3. Mixer</h2>
+              <h2 className="text-xl font-semibold mb-2">4. Mixer</h2>
               <p className="text-gray-300">
                 I mixern justerar du volym, effekter och balans mellan alla ljud
                 i projektet.
