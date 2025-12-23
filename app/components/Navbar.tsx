@@ -96,6 +96,13 @@ export default function Navbar() {
           >
             Kontakt
           </Link>
+          <Link
+            href="/webbresurs"
+            className={linkClass("/webbresurs")}
+            onClick={() => setOpen(false)}
+          >
+            Webbresurs
+          </Link>
         </div>
       )}
     </nav>

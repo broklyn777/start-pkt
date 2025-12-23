@@ -49,6 +49,27 @@ export default function Home() {
               </p>
             </section>
           </Link>
+          <section className="bg-gray-700 rounded-xl p-6 border border-gray-600">
+            <h2 className="text-xl font-semibold mb-2">🎧 Exempel</h2>
+            <p className="text-gray-300 mb-4">
+              Här är ett exempel på hur det kan låta när jag använder tipsen på
+              sidan.
+            </p>
+
+            <div className="rounded-xl overflow-hidden border border-gray-600">
+              <iframe
+                data-testid="embed-iframe"
+                style={{ borderRadius: 12 }}
+                src="https://open.spotify.com/embed/track/3JhUkoqd7jLXxZEoIgaA49?utm_source=generator"
+                width="100%"
+                height="152"
+                frameBorder={0}
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </section>
         </div>
       </div>
     </main>
