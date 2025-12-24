@@ -1,3 +1,49 @@
-# Piano Roll
+import PageShell from "@/components/layout/PageShell";
+import Card from "@/components/ui/Card";
+import ResourceLink from "@/components/ui/ResourceLink";
+import { guideMetadata } from "@/lib/metadata";
 
-Det här är första testet med MDX i WEBB26.
+export const metadata = guideMetadata({
+  title: "Piano Roll",
+  description:
+    "Lugn genomgång av hur du ritar noter, bygger melodier och använder Piano Roll i FL Studio.",
+});
+
+
+<PageShell
+    title="Piano Roll"
+  description={<>Lugn genomgång av <strong>Piano Roll</strong> i FL Studio.</>}
+  breadcrumb={[{ label: "Hem", href: "/" }, { label: "Piano Roll" }]}
+>
+
+  <div className="space-y-6 mb-8">
+ <Card title="Vad är Piano Roll?">
+  Piano Roll är där du ritar in noter (melodier och ackord). Tänk det som ett
+  rutnät: tid åt höger, tonhöjd uppåt.
+</Card>
+
+    <Card title="3 snabba saker att kunna">
+      <ul className="list-disc pl-5 space-y-1">
+        <li>Rita in noter med pennverktyget.</li>
+        <li>Flytta noter i tid (vänster/höger) och ton (upp/ner).</li>
+        <li>Zooma för att jobba exakt när det behövs.</li>
+      </ul>
+    </Card>
+<Card title="Vad är Piano Roll?">
+  <div className="space-y-2">
+    <p>Första stycket…</p>
+    <p>Andra stycket…</p>
+  </div>
+</Card>
+
+    <Card title="Länkar som hjälper">
+      <div className="space-y-2">
+        <ResourceLink
+          title="FL Studio Online Manual / Learning"
+          href="https://www.image-line.com/fl-studio-learning/fl-studio-online"
+          description="Officiella guider från Image-Line (bra som referens)."
+        />
+      </div>
+    </Card>
+  </div>
+</PageShell>
