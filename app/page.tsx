@@ -49,28 +49,30 @@ export default function Home() {
               </p>
             </section>
           </Link>
-          <section className="bg-gray-700 rounded-xl p-6 border border-gray-600">
-            <h2 className="text-xl font-semibold mb-2">🎧 Exempel</h2>
-            <p className="text-gray-300 mb-4">
-              Här är ett exempel på hur det kan låta när jag använder tipsen på
-              sidan.
-            </p>
-
-            <div className="rounded-xl overflow-hidden border border-gray-600">
-              <iframe
-                data-testid="embed-iframe"
-                style={{ borderRadius: 12 }}
-                src="https://open.spotify.com/embed/track/3JhUkoqd7jLXxZEoIgaA49?utm_source=generator"
-                width="100%"
-                height="152"
-                frameBorder={0}
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
-          </section>
         </div>
+        <section className="mt-12 pt-8 border-t border-gray-700">
+          <h2 className="text-lg font-semibold mb-2 text-gray-200">
+            🎧 Exempel
+          </h2>
+
+          <p className="text-sm text-gray-400 mb-4">
+            Ett exempel på hur det kan låta när jag använder samma enkla
+            workflow som beskrivs i guiden.
+          </p>
+
+          <div className="bg-gray-700 rounded-xl p-4 border border-gray-600">
+            <iframe
+              style={{ borderRadius: 12 }}
+              src="https://open.spotify.com/embed/track/3JhUkoqd7jLXxZEoIgaA49"
+              width="100%"
+              height="152"
+              frameBorder={0}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
+        </section>
       </div>
     </main>
   );

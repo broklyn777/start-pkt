@@ -1,6 +1,6 @@
 import Link from "next/link";
-import PageShell from "../components/PageShell";
-import Card from "../components/Card";
+import PageShell from "@/components/layout/PageShell";
+import Card from "@/components/ui/Card";
 
 export default function WebbresursIndexPage() {
   return (
