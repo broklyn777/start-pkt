@@ -1,0 +1,69 @@
+import PageShell from "@/components/layout/PageShell";
+import Card from "@/components/ui/Card";
+import ResourceLink from "@/components/ui/ResourceLink";
+import { guideMetadata } from "@/lib/metadata";
+
+export const metadata = guideMetadata({
+    title: "FL Studio",
+    description:
+        "Min personliga guide till FL Studio: workflow, övningar och resurser.",
+});
+
+<PageShell
+  title="FL Studio"
+  description="Min hub för att lära mig FL Studio – med workflow, övningar och länkar jag faktiskt använder."
+  breadcrumb={[{ label: "Hem", href: "/" }, { label: "FL Studio" }]}
+>
+  <div className="space-y-6 mb-8">
+    <Card title="Start här" variant="info">
+      <div className="space-y-2">
+        <ResourceLink
+          title="Channel Rack"
+          href="/fl-studio/channelrack" 
+          description="Bygg beats och patterns."
+        />
+        <ResourceLink
+          title="Piano Roll"
+          href="/fl-studio/pianoroll"
+          description="Rita melodier och ackord."
+        />
+        <ResourceLink
+          title="Playlist"
+        href="/fl-studio/playlist"
+          description="Arrangera hela låten."
+        />
+        <ResourceLink
+          title="Mixer"
+          href="/fl-studio/mixer"
+          description="Mix, nivåer och routing."
+        />
+      </div>
+    </Card>
+
+    <Card title="Min plan idag (10–20 min)">
+      <ul className="list-disc pl-5 space-y-1 text-gray-300">
+        <li>Gör en 4-takters trumloop (kick/snare/hat).</li>
+        <li>Lägg en enkel bas som följer kicken.</li>
+        <li>Exportera en wav och lyssna i mobilen.</li>
+      </ul>
+    </Card>
+
+    <Card title="När jag fastnar (snabb check)" variant="warning">
+      <ul className="list-disc pl-5 space-y-1 text-gray-300">
+        <li>Ingen ljud? Kolla Master, mixer routing och audio device (ASIO).</li>
+        <li>Latency? Testa buffer size och rätt driver.</li>
+        <li>Export låter konstigt? Kolla limiter på master och render-inställningar.</li>
+      </ul>
+    </Card>
+
+    <Card title="Bra resurser">
+      <div className="space-y-2">
+        <ResourceLink
+          title="FL Studio Online Manual / Learning"
+          href="https://www.image-line.com/fl-studio-learning/fl-studio-online"
+          description="Officiella guider från Image-Line."
+        />
+      </div>
+    </Card>
+  </div>
+</PageShell>

@@ -34,7 +34,10 @@ export default function ChannelRackPage() {
         <Link href="/" className="text-indigo-400 hover:underline">
           ← Hem
         </Link>
-        <Link href="/playlist" className="text-indigo-400 hover:underline">
+        <Link
+          href="/fl-studio/playlist"
+          className="text-indigo-400 hover:underline"
+        >
           Nästa: Playlist →
         </Link>
       </div>

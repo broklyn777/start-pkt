@@ -13,7 +13,7 @@ export default function Home() {
         </p>
 
         <div className="space-y-6">
-          <Link href="/channelrack" className="block">
+          <Link href="/fl-studio/channelrack" className="block">
             <section className="bg-gray-700 rounded-xl p-6 border border-gray-600 transition hover:bg-gray-600">
               <h2 className="text-xl font-semibold mb-2">1. Channel Rack</h2>
               <p className="text-gray-300">
@@ -23,7 +23,7 @@ export default function Home() {
             </section>
           </Link>
 
-          <Link href="/playlist" className="block">
+          <Link href="/fl-studio/playlist" className="block">
             <section className="bg-gray-700 rounded-xl p-6 border border-gray-600 transition hover:bg-gray-600">
               <h2 className="text-xl font-semibold mb-2">2. Playlist</h2>
               <p className="text-gray-300">
@@ -32,7 +32,7 @@ export default function Home() {
               </p>
             </section>
           </Link>
-          <Link href="/pianoroll" className="block">
+          <Link href="/fl-studio/pianoroll" className="block">
             <section className="bg-gray-700 rounded-xl p-6 border border-gray-600 transition hover:bg-gray-600">
               <h2 className="text-xl font-semibold mb-2">3. Piano Roll</h2>
               <p className="text-gray-300">
@@ -40,7 +40,7 @@ export default function Home() {
               </p>
             </section>
           </Link>
-          <Link href="/mixer" className="block">
+          <Link href="/fl-studio/mixer" className="block">
             <section className="bg-gray-700 rounded-xl p-6 border border-gray-600 transition hover:bg-gray-600">
               <h2 className="text-xl font-semibold mb-2">4. Mixer</h2>
               <p className="text-gray-300">

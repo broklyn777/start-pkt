@@ -3,7 +3,7 @@ import Link from "next/link";
 
 type PageShellProps = {
   title: string;
-  description?: string;
+  description?: ReactNode;
   breadcrumb?: { label: string; href?: string }[];
   children: ReactNode;
 };
@@ -17,7 +17,6 @@ export default function PageShell({
   return (
     <main className="min-h-screen flex items-center justify-center bg-gray-800 text-gray-100">
       <div className="max-w-2xl w-full px-6 py-12">
-        {/* Breadcrumb */}
         {breadcrumb && (
           <nav className="text-sm text-gray-400 mb-4">
             {breadcrumb.map((item, index) => (
@@ -37,7 +36,9 @@ export default function PageShell({
 
         <h1 className="text-3xl font-bold mb-4">{title}</h1>
 
-        {description && <p className="text-gray-300 mb-6">{description}</p>}
+        {description ? (
+          <div className="text-gray-300 mb-6">{description}</div>
+        ) : null}
 
         {children}
       </div>

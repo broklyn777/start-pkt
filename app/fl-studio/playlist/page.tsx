@@ -34,10 +34,16 @@ export default function PlaylistPage() {
       </div>
 
       <div className="flex items-center justify-between">
-        <Link href="/channelrack" className="text-indigo-400 hover:underline">
+        <Link
+          href="/fl-studio/channelrack"
+          className="text-indigo-400 hover:underline"
+        >
           ← Föregående: Channel Rack
         </Link>
-        <Link href="/pianoroll" className="text-indigo-400 hover:underline">
+        <Link
+          href="/fl-studio/pianoroll"
+          className="text-indigo-400 hover:underline"
+        >
           Nästa: Piano roll →
         </Link>
       </div>

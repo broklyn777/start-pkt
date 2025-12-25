@@ -8,8 +8,11 @@ export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  const isActive = (path: string) =>
+    pathname === path || pathname.startsWith(path + "/");
+
   const linkClass = (path: string) =>
-    pathname === path
+    isActive(path)
       ? "text-blue-600 font-semibold"
       : "text-gray-700 hover:text-blue-600 transition";
 
@@ -26,17 +29,17 @@ export default function Navbar() {
           <Link href="/" className={linkClass("/")}>
             Hem
           </Link>
-          <Link href="/omoss" className={linkClass("/omoss")}>
-            Om oss
+
+          <Link href="/fl-studio" className={linkClass("/fl-studio")}>
+            FL Studio
           </Link>
-          <Link href="/tjanster" className={linkClass("/tjanster")}>
-            Tjänster
-          </Link>
-          <Link href="/kontakt" className={linkClass("/kontakt")}>
-            Kontakt
-          </Link>
+
           <Link href="/webbresurs" className={linkClass("/webbresurs")}>
             Webbresurs
+          </Link>
+
+          <Link href="/kontakt" className={linkClass("/kontakt")}>
+            Kontakt
           </Link>
         </div>
 
@@ -44,23 +47,24 @@ export default function Navbar() {
         <button
           className="md:hidden focus:outline-none"
           onClick={() => setOpen(!open)}
+          aria-label={open ? "Stäng meny" : "Öppna meny"}
         >
           <div className="space-y-1.5">
             <span
               className={`block h-1 w-6 bg-gray-800 transition ${
                 open ? "rotate-45 translate-y-2" : ""
               }`}
-            ></span>
+            />
             <span
               className={`block h-1 w-6 bg-gray-800 transition ${
                 open ? "opacity-0" : ""
               }`}
-            ></span>
+            />
             <span
               className={`block h-1 w-6 bg-gray-800 transition ${
                 open ? "-rotate-45 -translate-y-2" : ""
               }`}
-            ></span>
+            />
           </div>
         </button>
       </div>
@@ -75,33 +79,29 @@ export default function Navbar() {
           >
             Hem
           </Link>
+
           <Link
-            href="/omoss"
-            className={linkClass("/omoss")}
+            href="/fl-studio"
+            className={linkClass("/fl-studio")}
             onClick={() => setOpen(false)}
           >
-            Om oss
+            FL Studio
           </Link>
-          <Link
-            href="/tjanster"
-            className={linkClass("/tjanster")}
-            onClick={() => setOpen(false)}
-          >
-            Tjänster
-          </Link>
-          <Link
-            href="/kontakt"
-            className={linkClass("/kontakt")}
-            onClick={() => setOpen(false)}
-          >
-            Kontakt
-          </Link>
+
           <Link
             href="/webbresurs"
             className={linkClass("/webbresurs")}
             onClick={() => setOpen(false)}
           >
             Webbresurs
+          </Link>
+
+          <Link
+            href="/kontakt"
+            className={linkClass("/kontakt")}
+            onClick={() => setOpen(false)}
+          >
+            Kontakt
           </Link>
         </div>
       )}

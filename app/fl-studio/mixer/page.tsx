@@ -32,7 +32,10 @@ export default function MixerPage() {
 
       {/* Navigation */}
       <div className="flex items-center justify-between">
-        <Link href="/pianoroll" className="text-indigo-400 hover:underline">
+        <Link
+          href="/fl-studio/pianoroll"
+          className="text-indigo-400 hover:underline"
+        >
           ← Föregående: Piano roll
         </Link>
         <Link href="/" className="text-indigo-400 hover:underline">
