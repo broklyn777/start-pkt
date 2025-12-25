@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata as NextMetadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 // app/layout.tsx
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: NextMetadata = {
   title: {
     default: "FL Studio Guide",
     template: "%s | FL Studio Guide",
